@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 
 <head>
- <title>My rstaurant card</title>
+
+ <title>My restaurant card</title>
+
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         background-color: lightblue;
+         color: rgb(68, 68, 59);
+         text-align: center;
+     }
+
+     h1 {
+         color: rgb(241, 168, 79);
+     }
+
+     h1+p {
+         background-color: white;
+         padding: 10px;
+         border-radius: 30px;
+         color: salmon;
+         text-decoration: underline;
+     }
+
+     ul {
+         padding: 0;
+         margin-top: 20px;
+     }
+
+     ul>li {
+         list-style-type: none;
+         padding: 10px;
+         margin: 5px;
+         background-color: rgb(241, 168, 79);
+         color: white;
+         border-radius: 5px;
+     }
+
+     ul li:nth-child(1) {
+         font-size: 20px;
+         font-weight: bold;
+         color: yellow;
+     }
+
+     .message {
+         color: rgb(12, 223, 65);
+         margin-top: 20px;
+         font-size: 16px;
+         max-width: 400px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .links {
+         margin-top: 20px;
+     }
+
+     .links a {
+         display: inline-block;
+         margin: 10px;
+         padding: 10px 20px;
+         background-color: rgb(241, 168, 79);
+         color: white;
+         text-decoration: none;
+         border-radius: 5px;
+     }
+
+     .links a:hover {
+         background-color: rgb(238, 130, 29);
+     }
+</style>
+
 </head>
 
 <body>
-     <h2 >My Restaurant Card</h2>
+     <h1>CORAL BITES</h1>
+     <p>Welcome to Coral Bites, where the ocean meets your taste buds!🍤</p>
 
+     <h2>OUR SPECIALTIES</h2>
+     <ul>
+         <li>Grilled Lobster Tail-Our signature dish</li>
+         <li>Seared Scallops</li>
+         <li>Garlic Butter Shrimp</li>
+         <li>Seafood Paella</li>
+         <li>Clam Chowder</li>
+     </ul>
 
+     <p>We serve <strong>fresh, delicious meals made with quality ingredients </strong> a warm and welcoming atmosphere. Whether you're here
+     for a quick bite or a family meal, we're happy to serve you." 🍽️</p>
+
+     <div class="links">
+         <a href="#">Reserve a Table</a>
+         <a href="#">View Menu</a>
+     </div>
 </body>
