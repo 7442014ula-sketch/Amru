@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Planet Explorer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            .pagination {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+            }
+
+            .section-title {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .spinner-border text-primary {
+                justify-content: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Planet Explorer</a>
+            <ul class="navbar-nav">
+                <li class="navbar-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="navbar-item"><a class="nav-link" href="#">planet</a></li>
+                <li class="navbar-item"><a class="nav-link" href="#">galaxy</a></li>
+            </ul>
+        </nav>
+        <div class="container-md-4">
+            <h4 class="section-title">Exploring the cosmos...</h4>
+            <div class="spinner-border text-primary" role="status"></div>
+            <div class="spinner-border text-warning" role="status"></div>
+            <div class="spinner-border text-danger" role="status"></div>
+
+            <h4 class="section-title">our discoveries</h4>
+             <div class="col-md-4">
+               <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">MARS</h5>
+                  <p class="card-text">The fourth planet from the Sun and the second-smallest planet in the Solar System also known as the red planet.</p>
+                  <a href="#" class="btn btn-primary">EXPLORE</a>
+                </div>
+               </div>
+             </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">NEBULA</h5>
+                 <p class="card-text">A cloud of gas and dust in space which is blue in colour.</ p>
+                 <a href="#" class="btn btn-primary">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">MILKY WAY</h5>
+                    <p class="card-text">A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction.</p>
+                    <a href="#" class="btn btn-primary">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 class="section-title">browse our discoveries</h4>
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">></a></li>
+</ul>
+    </body>
+</html>
