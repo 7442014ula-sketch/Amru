@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+    <P>a function can access variable defined inside the function</P>
+    <button type="button" onclick="thirdfunction()">click me</button>
+    <P id="demo"></P>
+    <P id="demo1"></P>
+    
+    <script>
+        var b = 5;
+        function thirdfunction() {
+            var a = 4;
+            document.getElementByid("demo").innerHTML = b * a;
+        }
+        document.getElementByid("demo1").innerHTML = a;
+        document.getElementByid("demo2").innerHTML = b;
+     </script>
+</body>
