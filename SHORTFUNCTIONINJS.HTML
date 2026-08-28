@@ -3,7 +3,7 @@
     <body>
         <h2>javascript string methods</h2>
         <P>these are some basic methods</P>
-
+        
         <script>
             var str = "AMAZING"
             document.write(str.toUpperCase());
@@ -18,6 +18,54 @@
             var res = patt.test(str);
             document.write(res);
 
+        </script>
+
+        <h2>javascript for loop</h2>
+        <p id="demo"></p>
+        <script>
+            var fruits = ["Apple", "Mango", "Grapes",
+                "Watermelon", "Jack fruit", "Banana"];
+            var text = "";
+            var i;
+            for (i =0; i < fruits.length; i++) {
+                text += fruits[i] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <p id="demo1"></p>
+        <script>
+            var Day;
+            switch (new Date().getDay()) {
+                 case 0:
+                    Day = "Sunday"
+                    break;
+
+                 case 1:
+                    Day = "Monday"
+                    break;
+
+                 case 2:
+                    Day = "Tuesday"
+                    break;
+
+                 case 3:
+                    Day = "Wednesday"
+                    break;
+
+                 case 4:
+                    Day = "Thursday"
+                    break;
+
+                 case 5:
+                    Day = "Friday"
+                    break;
+
+                 case 6:
+                    Day = "Saturday"
+                    break;
+            }
+            document.getElementById("demo1").innerHTML = "Today is : " + Day;
         </script>
     </body>
 </html>
