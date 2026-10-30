@@ -45,6 +45,17 @@
 </head>
 
 <body>
+    <section>
+        <img class="myslides"
+            src="https://as1.ftcdn.net/jpg/05/77/38/48/1000_F_577384822_aXh1eiJeWXSBOVmDRFp55f0RjD7jYqlD.jpg"
+            style="height:500px">
+        <img class="myslides"
+            src="https://tse2.mm.bing.net/th/id/OIP.zz0MnBQB943zsp0Gto22zwHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            style="height:500px">
+        <img class="myslides"
+            src="https://tse3.mm.bing.net/th/id/OIP.Gv0e79JigkWe7w0TM8QOBQHaFD?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            style="height:500px">
+    </section>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#">Defenition</a>
@@ -104,6 +115,22 @@
         walking can reduce your carbon footprint. For longer distances, trains and buses are more sustainable than individual
         car travel</p>
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1500);
+        }
+    </script>
     </body>
     
     </html>
